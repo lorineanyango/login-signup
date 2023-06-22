@@ -24,8 +24,7 @@ public class PasswordEncoder {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
         http
-                .csrf()
-                .disable()
+                .csrf().disable()
                 .authorizeRequests()
                 .requestMatchers("")
                 .permitAll()
